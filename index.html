@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    <div class="containerr">
+        <div class="todo-app">
+            <h1>Todo List</h1>
+            
+            
+            <div class="view-toggle">
+              <button id="daily-btn" class="toggle-btn active">Daily To-Do</button>
+              <button id="weekly-btn" class="toggle-btn">Weekly To-Do</button>
+            </div>
+        
+           
+            <div id="daily-view" class="todo-view">
+              <div class="todo-input-container">
+                <input type="text" id="daily-task-input" placeholder="Add a daily task...">
+                <button id="add-daily-btn">Add</button>
+              </div>
+              <ul id="daily-task-list"></ul>
+            </div>
+        
+          
+            <div id="weekly-view" class="todo-view hidden">
+              <div class="weekly-tasks">
+                
+                 <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="weekly-day" id="saturday-tasks">
+                            <h3>Saturday</h3>
+                            <div class="todo-input-container">
+                              <input type="text" id="saturday-input" placeholder="Add a task for Saturday...">
+                              <button class="add-weekly-btn" data-day="saturday">ADD</button>
+                            </div>
+                            <ul id="saturday-task-list"></ul>
+                          </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="weekly-day" id="sunday-tasks">
+                    <h3>Sunday</h3>
+                    <div class="todo-input-container">
+                      <input type="text" id="sunday-input" placeholder="Add a task for Sunday...">
+                      <button class="add-weekly-btn" data-day="sunday">ADD</button>
+                    </div>
+                    <ul id="sunday-task-list"></ul>
+                  </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="weekly-day" id="monday-tasks">
+                            <h3>Monday</h3>
+                            <div class="todo-input-container">
+                              <input type="text" id="monday-input" placeholder="Add a task for Monday...">
+                              <button class="add-weekly-btn" data-day="monday">ADD</button>
+                            </div>
+                            <ul id="monday-task-list"></ul>
+                          </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="weekly-day" id="tuesday-tasks">
+                            <h3>Tuesday</h3>
+                            <div class="todo-input-container">
+                              <input type="text" id="tuesday-input" placeholder="Add a task for Tuesday...">
+                              <button class="add-weekly-btn" data-day="tuesday">ADD</button>
+                            </div>
+                            <ul id="tuesday-task-list"></ul>
+                          </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="weekly-day" id="wednesday-tasks">
+                            <h3>Wednesday</h3>
+                            <div class="todo-input-container">
+                              <input type="text" id="wednesday-input" placeholder="Add a task for Wednesday...">
+                              <button class="add-weekly-btn" data-day="wednesday">ADD</button>
+                            </div>
+                            <ul id="wednesday-task-list"></ul>
+                          </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="weekly-day" id="thursday-tasks">
+                            <h3>Thursday</h3>
+                            <div class="todo-input-container">
+                              <input type="text" id="thursday-input" placeholder="Add a task for Thursday...">
+                              <button class="add-weekly-btn" data-day="thursday">ADD</button>
+                            </div>
+                            <ul id="thursday-task-list"></ul>
+                          </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="weekly-day" id="friday-tasks">
+                            <h3>Friday</h3>
+                            <div class="todo-input-container">
+                              <input type="text" id="friday-input" placeholder="Add a task for Friday...">
+                              <button class="add-weekly-btn" data-day="friday">ADD</button>
+                            </div>
+                            <ul id="friday-task-list"></ul>
+                          </div>
+                    </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+    </div>
+ 
+<script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
